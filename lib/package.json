@@ -1,7 +1,7 @@
 {
-  "name": "chaz-acme-explosives",
+  "name": "chaz-weather",
   "version": "1.0.0",
-  "description": "This is a grunt test file",
+  "description": "Gruntfile Template",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
