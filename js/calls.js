@@ -24,9 +24,22 @@ function getWeather(city, state) {
     });
 }
 
+function getForcast(city, state) {
+    return new Promise(function (resolve, reject){
+        $.ajax({
+            url: `http://api.wunderground.com/api/3018d91767478a9c/forecast10day/q/${state}/${city}.json`
+        }).done(function(data){
+            resolve(data);
+        }).fail(function(error){
+            reject(error);
+        });
+    });
+}
+
 
 module.exports = 
 {
     getCity,
-    getWeather
+    getWeather,
+    getForcast
 };
